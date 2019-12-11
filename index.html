@@ -106,7 +106,7 @@
         oDiv.removeAttribute('data-num')
     </script>
 
-    <h3>小案例：生成表格定格行變色</h3>
+    <h3>小案例：生成表格並格行變色+按鈕</h3>
     <input type="number" id="row" placeholder="行">
     <input type="number" id="col" placeholder="列">
     <input type="button" id="bt" value="確定">
@@ -217,16 +217,16 @@
     <h3>窗口大小</h3>
     <p id="size">點我看窗口大小</p>
     <script>
-        var Wsize = 0
-        window.onresize = function () { // 視窗縮放時執行
-            Wsize++
-            console.log(Wsize)
-        }
-        var Wscroll = 0
-        window.onscroll = function () { // 視窗滾動時執行
-            Wscroll++
-            console.log(Wscroll)
-        }
+        // var Wsize = 0
+        // window.onresize = function () { // 視窗縮放時執行
+        //     Wsize++
+        //     console.log(Wsize)
+        // }
+        // var Wscroll = 0
+        // window.onscroll = function () { // 視窗滾動時執行
+        //     Wscroll++
+        //     console.log(Wscroll)
+        // }
         $('size').onclick = function () {
             console.log(document.documentElement.clientWidth) // 獲取視窗可見寬度
             console.log(document.documentElement.clientHeight) // 獲取視窗可見高度
